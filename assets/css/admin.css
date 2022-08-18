@@ -51,15 +51,15 @@
   margin-top: 14px;
 }
 table {
-  border-top: 1px solid #ccc;
-  /* border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc; */
+  border: 1px solid #ccc;
   box-shadow: 4px 4px 4px rgb(0 0 0 / 8%);
   font-family: Helvetica, Arial, sans-serif;
+  max-width: 484px;
 }
 thead tr {
-  background-color: #fff;
+  background-color: #f0a52b;
+  color: var(--white-color);
+  font-weight: 600;
 }
 /* hàng lẻ */
 table tbody tr:nth-child(odd) {
@@ -71,25 +71,23 @@ table tr:nth-child(even) {
 }
 tr {
   height: 60px;
-  border: none;
+  /* border: none; */
   line-height: 60px;
+  width: 100%;
 }
 th {
   text-align: center;
 }
 td {
-  border: none;
+  /* border: none; */
   text-align: center;
-}
-td > i {
-  height: 24px;
-  margin-right: 8px;
-  border-radius: 50%;
-  margin-bottom: 2px;
+  padding: 0 10px;
 }
 .table__rank {
-  width: 90px;
+  min-width: 14px;
   text-align: center;
+  text-transform: uppercase;
+  padding: 0 10px;
 }
 .table__delete-user:hover {
   color: #a70e1a;
@@ -97,21 +95,25 @@ td > i {
   cursor: pointer;
 }
 .table__delete-user {
-  width: 160px;
+  min-width: 160px;
 }
 .table__control {
-  width: 160px;
+  min-width: 160px;
 }
 .table__title {
-  overflow: hidden;
-  width: 700px;
+  min-width: 700px;
 }
 
 .table__user-name,
 .table__password {
-  width: 300px;
+  min-width: 300px;
+  max-width: 330px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 28px;
 }
 .table__check,
 .table__control {
-    width: 60px;
+  min-width: 60px;
 }
