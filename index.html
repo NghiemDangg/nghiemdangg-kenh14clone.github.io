@@ -48,25 +48,25 @@
                 <i class="fa-solid fa-star"></i>
                 <a href="#">SEA GAME31</a>
               </li>
-  
+
               <li class="header__star-item">
                 <i class="fa-solid fa-star"></i>
                 <a href="#">EMAGAZINE</a>
               </li>
-  
+
               <li class="header__star-item">
                 <i class="fa-solid fa-star"></i>
                 <a href="#">PODCAST</a>
               </li>
             </ul>
-  
+
             <div class="header__star-search flex-box">
               <input type="header__text" placeholder="Tìm kiếm..." />
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
           </div>
         </div>
-  
+
         <nav class="nav">
           <div class="header__tag">
             <div class="wrapper">
@@ -75,7 +75,7 @@
                 alt=""
                 class="header__tag-logo"
               />
-  
+
               <ul class="header__tag-list flex-box">
                 <i class="fa-solid fa-arrow-trend-up"></i>
                 <li><a href="">#U23 Việt Nam vô địch SEA Games 31</a></li>
@@ -84,50 +84,48 @@
               </ul>
             </div>
           </div>
-  
+
           <div id="sticky_nav" class="header__nav">
             <div class="wrapper">
-                <ul class="header__nav-list">
-                  <li class="icon">
-                    <a href="#">
-                      <i class="fa-solid fa-house"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://kenh14.vn/star.chn" title="Xã Hội">Xã Hội</a>
-                  </li>
-                  <li>
-                    <a href="https://kenh14.vn/tv-show.chn" title="Thể Thao"
-                      >Thể Thao</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://kenh14.vn/musik.chn" title="Kinh Doanh"
-                      >Kinh Doanh</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://kenh14.vn/money-z.chn" title="Văn Hoá"
-                      >Văn Hoá</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://kenh14.vn/the-gioi-do-day.chn" title="Thế giới"
-                      >Thế giới</a
-                    >
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-ellipsis"></i>
-                  </li>
-                  <ul class="list-login">
-                    <li class="btn__open-login login-item">
-                      Đăng nhập
-                    </li>
-                    <li class="btn__open-auth login-item">
-                     Đăng ký
-                    </li>
-                  </ul>
+              <ul class="header__nav-list">
+                <li class="icon">
+                  <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://kenh14.vn/star.chn" title="Xã Hội">Xã Hội</a>
+                </li>
+                <li>
+                  <a href="https://kenh14.vn/tv-show.chn" title="Thể Thao"
+                    >Thể Thao</a
+                  >
+                </li>
+                <li>
+                  <a href="https://kenh14.vn/musik.chn" title="Kinh Doanh"
+                    >Kinh Doanh</a
+                  >
+                </li>
+                <li>
+                  <a href="https://kenh14.vn/money-z.chn" title="Văn Hoá"
+                    >Văn Hoá</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://kenh14.vn/the-gioi-do-day.chn"
+                    title="Thế giới"
+                    >Thế giới</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </li>
+                <ul class="list-login">
+                  <li class="btn__open-login login-item">Đăng nhập</li>
+                  <li class="btn__open-auth login-item">Đăng ký</li>
                 </ul>
+              </ul>
             </div>
           </div>
         </nav>
@@ -932,58 +930,81 @@
             <div class="auth-from__container">
               <div class="auth-form__header">
                 <h3 class="auth-form__heading">Đăng ký</h3>
-                <span class="auth-form__switch-btn switch__btn-login">Đăng nhập</span>
+                <span class="auth-form__switch-btn switch__btn-login"
+                  >Đăng nhập</span
+                >
               </div>
-  
-              <div class="auth-form__form">
-                <div class="auth-form__group">
-                  <input
-                    type="text"
-                    class="auth-form__input"
-                    placeholder="Email của bạn"
-                  />
+              <form action="">
+                <div class="auth-form__form">
+                  <div class="auth-form__group">
+                    <input
+                      type="text"
+                      class="auth-form__input"
+                      placeholder="Tên đăng ký"
+                      minlength="6"
+                      maxlength="20"
+                      required
+                    />
+                  </div>
+                  <div class="auth-form__group">
+                    <input
+                      type="password"
+                      class="auth-form__input"
+                      placeholder="Mật khẩu của bạn"
+                      name="password"
+                      id="password"
+                      required
+                      minlength="8"
+                      maxlength="20"
+                    />
+                  </div>
+                  <div class="auth-form__group">
+                    <input
+                      type="password"
+                      class="auth-form__input"
+                      placeholder="Nhập lại mật khẩu"
+                      name="password"
+                      id="password"
+                      required
+                      minlength="8"
+                      maxlength="20"
+                    />
+                  </div>
                 </div>
-                <div class="auth-form__group">
-                  <input
-                    type="password"
-                    class="auth-form__input"
-                    placeholder="Mật khẩu của bạn"
-                  />
+                <div class="auth-form__aside">
+                  <p class="auth-form__policy-text">
+                    Bằng việc đăng kí, bạn đã đồng ý với News về
+                    <a href="#">Điều khoản dịch vụ </a>&
+                    <a href="#">Chính sách bảo mật</a>
+                  </p>
                 </div>
-                <div class="auth-form__group">
-                  <input
-                    type="password"
-                    class="auth-form__input"
-                    placeholder="Nhập lại mật khẩu"
-                  />
+                <div class="auth-form__controls">
+                  <button
+                    type="button"
+                    class="btn__close-auth btn btn-normal auth-form__controls-back"
+                  >
+                    TRỞ LẠI
+                  </button>
+                  <button type="submit" class="btn btn--primary">
+                    ĐĂNG KÝ
+                  </button>
                 </div>
-              </div>
-              <div class="auth-form__aside">
-                <p class="auth-form__policy-text">
-                  Bằng việc đăng kí, bạn đã đồng ý với News về
-                  <a href="#">Điều khoản dịch vụ </a>&
-                  <a href="#">Chính sách bảo mật</a>
-                </p>
-              </div>
-              <div class="auth-form__controls">
-                <button class="btn__close-auth btn btn-normal auth-form__controls-back" >
-                  TRỞ LẠI
-                </button>
-                <button class="btn btn--primary">ĐĂNG KÝ</button>
-              </div>
+              </form>
             </div>
             <div class="auth-form__sns">
-              <a href="#" class="btn btn--size-s btn--with-icon auth-form__sns--fb"
-                ><i
-                  class="auth-form__sns-icon  fa-brands fa-facebook"
-                ></i>
+              <a
+                href="#"
+                class="btn btn--size-s btn--with-icon auth-form__sns--fb"
+                ><i class="auth-form__sns-icon fa-brands fa-facebook"></i>
                 <span class="auth-form__sns-label"> Kết nối với Facebook </span>
               </a>
               <a
                 href="#"
                 class="btn btn--size-s auth-form__sns--google btn--with-icon"
                 ><i class="auth-form__sns-icon fa-brands fa-google"></i>
-                <span class="auth-form__sns-label"> Kết nối với Google </span></a
+                <span class="auth-form__sns-label">
+                  Kết nối với Google
+                </span></a
               >
             </div>
           </div>
@@ -999,32 +1020,47 @@
             <div class="auth-from__container">
               <div class="auth-form__header">
                 <h3 class="auth-form__heading">Đăng nhập</h3>
-                <span class="auth-form__switch-btn switch__btn-auth">Đăng ký</span>
+                <span class="auth-form__switch-btn switch__btn-auth"
+                  >Đăng ký</span
+                >
               </div>
-
-              <div class="auth-form__form">
-                <div class="auth-form__group">
-                  <input
-                    type="text"
-                    class="auth-form__input"
-                    placeholder="Email / Tên đăng nhập"
-                  />
+              <form action="">
+                <div class="auth-form__form">
+                  <div class="auth-form__group">
+                    <input
+                      type="text"
+                      class="auth-form__input"
+                      placeholder="Tên đăng nhập"
+                      minlength="6"
+                      maxlength="20"
+                      required
+                    />
+                  </div>
+                  <div class="auth-form__group">
+                    <input
+                      type="password"
+                      class="auth-form__input"
+                      placeholder="Mật khẩu của bạn"
+                      name="password"
+                      id="password"
+                      required
+                      minlength="8"
+                      maxlength="20"
+                    />
+                  </div>
                 </div>
-                <div class="auth-form__group">
-                  <input
-                    type="password"
-                    class="auth-form__input"
-                    placeholder="Mật khẩu của bạn"
-                  />
+                <div class="auth-form__controls auth-form-login">
+                  <button
+                    type="button"
+                    class="btn btn-normal auth-form__controls-back btn__close-login"
+                  >
+                    TRỞ LẠI
+                  </button>
+                  <button type="submit" class="btn btn--primary">
+                    ĐĂNG NHẬP
+                  </button>
                 </div>
-              </div>
-              <div class="auth-form__controls auth-form-login">
-                <button
-                  class="btn btn-normal auth-form__controls-back btn__close-login">
-                  TRỞ LẠI
-                </button>
-                <button class="btn btn--primary">ĐĂNG NHẬP</button>
-              </div>
+              </form>
             </div>
             <div class="auth-form__sns">
               <a
@@ -1039,7 +1075,8 @@
                 ><i class="auth-form__sns-icon fa-brands fa-google"></i>
                 <span class="auth-form__sns-label">
                   Kết nối với Google
-                </span></a>
+                </span></a
+              >
             </div>
           </div>
         </div>
